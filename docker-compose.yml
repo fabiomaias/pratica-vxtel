@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  webapi:
+    image: vxtel-webapi
+    build:
+      context: .
+      dockerfile: src/VxTel.WebAPI/Dockerfile
+    ports:
+      - "5000:80"
+      - "5001:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=159753
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+    restart: always
+    volumes:
+      - ~/.aspnet/https:/https:ro
+
+  ui:
+    image: vxtel
+    depends_on:
+      - webapi
+    build:
+      context: .
+      dockerfile: src/VxTel.WebNextJs/Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000

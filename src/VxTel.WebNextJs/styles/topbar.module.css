@@ -1,0 +1,13 @@
+.root {
+  width: 100%;  
+}
+.colorbar{
+  background-color: rgb(146 23 26 / 33%);
+}
+.menuButton {
+  margin-right: spacing(2);
+}
+.title {
+  flex-grow: 1;
+  text-align: center;
+}

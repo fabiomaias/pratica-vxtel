@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VxTel.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:VxTel.WebAPI.Controllers.EstimateController.EstimateCall(VxTel.Application.ModelsRequests.EstimateRequest)">
+            <summary>
+                Estimar preço das chamadas com e sem plano
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VxTel.WebAPI.Controllers.PlanController.GetAll">
+            <summary>
+                Consultar todos os Planos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VxTel.WebAPI.Controllers.PlanController.GetById(System.Guid)">
+            <summary>
+                Consultar Plano por Id
+            </summary>
+            <param name="id">Guid do Plano</param>
+            <returns></returns>
+        </member>
+        <member name="M:VxTel.WebAPI.Controllers.PlanController.Post(VxTel.Application.ViewModels.PlanViewModel)">
+            <summary>
+                Cadastrar Plano
+            </summary>
+            <param name="planViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VxTel.WebAPI.Controllers.PlanController.Update(System.Guid,VxTel.Application.ViewModels.PlanViewModel)">
+            <summary>
+                Atualizar Plano
+            </summary>
+            <param name="id">Guid do Plano a ser atualizado</param>
+            <param name="planViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VxTel.WebAPI.Controllers.PlanController.Delete(System.Guid)">
+            <summary>
+                Excluir Plano
+            </summary>
+            <param name="id">Guid do Plano a ser excluído</param>
+            <returns></returns>
+        </member>
+        <member name="M:VxTel.WebAPI.Controllers.PriceController.GetAll">
+            <summary>
+                Consultar todos os Preços
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VxTel.WebAPI.Controllers.PriceController.GetById(System.Guid)">
+            <summary>
+                Consultar Preço por Id
+            </summary>
+            <param name="id">Guid do item de Preço</param>
+            <returns></returns>
+        </member>
+        <member name="M:VxTel.WebAPI.Controllers.PriceController.Post(VxTel.Application.ViewModels.PriceViewModel)">
+            <summary>
+                Cadastrar Preço
+            </summary>
+            <param name="priceViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VxTel.WebAPI.Controllers.PriceController.Update(System.Guid,VxTel.Application.ViewModels.PriceViewModel)">
+            <summary>
+                Atualizar Preço
+            </summary>
+            <param name="id">Guid do Preço a ser atualizado</param>
+            <param name="priceViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VxTel.WebAPI.Controllers.PriceController.Delete(System.Guid)">
+            <summary>
+                Excluir Preço
+            </summary>
+            <param name="id">Guid do Preço a ser excluído</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
